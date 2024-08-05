@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #eee;
+      }
+      * {
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .yinYing {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px" class="baiSe yinYing"></div>
+    <!-- 主区域 -->
+    <div class="flex1 column flex">
+      <!-- 头部栏 -->
+      <div style="height: 60px" class="baiSe yinYing mg8"></div>
+      <!-- 内容栏 -->
+      <div class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 数据区 -->
+          <div class="flex">
+            <!--数据块-->
+            <div style="height: 150px" class="flex1 baiSe yinYing mgr"></div>
+            <div style="height: 150px" class="flex1 baiSe yinYing mgr"></div>
+            <div style="height: 150px" class="flex1 baiSe yinYing mgr"></div>
+            <div style="height: 150px" class="flex1 baiSe yinYing"></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex1 column">
+            <!--列表项-->
+            <div style="height: 180px" class="baiSe yinYing mgt"></div>
+            <div style="height: 180px" class="baiSe yinYing mgt"></div>
+            <div style="height: 180px" class="baiSe yinYing mgt"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="column flex mgt mgr">
+          <!-- 提示区 -->
+          <div style="height: 260px" class="baiSe yinYing"></div>
+          <!-- 消息区 -->
+          <div style="height: 360px" class="baiSe yinYing mgt"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
