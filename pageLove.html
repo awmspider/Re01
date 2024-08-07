@@ -11,7 +11,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(135deg, #4bc0c8, #c779d0, #feac5e);
+        background-image: linear-gradient(135deg, #a6c0fe 0%, #f68084 100%);
       }
       .box {
         height: 70%;
@@ -42,10 +42,19 @@
       a {
         color: #a764de; /* 设置链接的颜色 */
       }
+      @media (max-width: 1000px) {
+        .ceBian {
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+        .shiGe {
+          text-align: left;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="box">
+    <div class="box ceBian">
       <p>to鱼鱼:</p>
       <p>
         这个作业是做一个520网页给自己爱的人<br />
@@ -65,7 +74,7 @@
           >Aquí te amo.</span
         >
       </p>
-      <p class="font">
+      <p class="font shiGe">
         En los oscuros pinos se desenreda el viento.<br />
         Fosforece la luna sobre las aguas errantes.<br />
         Andan días iguales persiguiéndose.<br />
@@ -138,7 +147,7 @@
         >
       </p>
       <p>
-        ps：打这段中文的时候，vscode一直在给我的标点符号报错。中文标点多么优美啊！呵，愚蠢的机器。<br />我在编辑页面时总是下意识换行，但是笨笨的编辑器只认换行符。于是在预览页面看见许多空格，我只好又回头找原因，逐一在结尾添上换行符。
+        ps：打这段中文的时候，vscode一直在给我的标点符号报错。中文标点多么优美啊！呵，愚蠢的机器。<br />我在编辑页面时总是下意识换行，但是笨笨的编辑器只认换行符。于是在预览页面看见许多空格，我只好又回头找原因，逐一在结尾添上换行符。<br />
         放入这首长长的诗歌，是因为我真的很想让你看看滑动的效果^^<br />以及，这首诗是聂鲁达写的。翻译成中文，应该就是，“我在这里爱你”。
       </p>
     </div>
